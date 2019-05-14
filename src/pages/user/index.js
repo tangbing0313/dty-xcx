@@ -39,7 +39,7 @@ export default class Index extends Component {
   }
   render () {
     return (
-      <View className='index'>
+      <View className='user'>
         <Text>我们 中心啊</Text>
         <Button onClick={this.click}>点击下试试</Button>
         <Button onClick={this.click2}>点击下试试</Button>

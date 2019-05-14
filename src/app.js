@@ -15,26 +15,42 @@ class App extends Component {
     pages: [
       'pages/index/index',
       'pages/user/index',
-      'pages/content/taobao'
+      'pages/content/taobao',
+      'pages/study/index',
+      'pages/club/index'
     ],
     window: {
       backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
+      navigationBarBackgroundColor: '#36b378',
       navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
+      navigationBarTextStyle: 'white'
     },
     tabBar:{
       color: '#000000',
-      selectedColor: '#ff0000',
-      backgroundColor: '#afafaf',
+      selectedColor: '#36b378',
+      backgroundColor: '#fff',
       borderStyle: 'black',
       list: [
         {
           pagePath:'pages/index/index',
           text:'首页',
+          iconPath: "./assets/common/tab1.png",
+          selectedIconPath: "./assets/common/tab1_select.png"
+        },{
+          pagePath:'pages/study/index',
+          text:'学习',
+          iconPath: "./assets/common/tab2.png",
+          selectedIconPath: "./assets/common/tab2_select.png"
+        },{
+          pagePath:'pages/club/index',
+          text:'发现',
+          iconPath: "./assets/common/tab3.png",
+          selectedIconPath: "./assets/common/tab3_select.png"
         },{
           pagePath:'pages/user/index',
           text:'我的',
+          iconPath: "./assets/common/tab4.png",
+          selectedIconPath: "./assets/common/tab4_select.png"
         }
       ]
     }
