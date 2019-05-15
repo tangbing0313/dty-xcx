@@ -9,7 +9,7 @@ export default class Index extends Component {
   }
 
   componentWillMount(){
-    Taro.request({
+    /*Taro.request({
       url: 'http://wechat.duotuill.com/xcx/index',
       data: {
         foo: 'foo',
@@ -19,31 +19,32 @@ export default class Index extends Component {
         'content-type': 'application/json'
       }
     })
-      .then(res => console.log(res.data))
+      .then(res => console.log(res.data))*/
   }
 
   render () {
     return (
       <View className='index'>
         <View className='indexWapper'>
-          <Swiper
-            className='indexSwiper'
-            indicatorColor='#999'
-            indicatorActiveColor='#333'
-            style={{height:'150px',width:'100%'}}
-            circular
-            indicatorDots
-            autoplay>
-            <SwiperItem>
-              <Image style={{width:'100%'}}  src='http://p1.music.126.net/yHRI1v_VjLXbxlbBPVOVIQ==/109951164072281201.jpg' />
-            </SwiperItem>
-            <SwiperItem>
-              <Image style={{width:'100%'}}  src='http://p1.music.126.net/L8V3uVejBPq0-sayNgDMYA==/109951164072238305.jpg' />
-            </SwiperItem>
-            <SwiperItem>
-              <Image style={{width:'100%'}}  src='http://p1.music.126.net/yYt2NIFerGKv1NIgsd8isA==/109951164072244366.jpg' />
-            </SwiperItem>
-          </Swiper>
+          <View className='indexSwiper'>
+            <Swiper
+              indicatorColor='#999'
+              indicatorActiveColor='#333'
+              style={{height:'150px'}}
+              circular
+              indicatorDots
+              autoplay>
+              <SwiperItem>
+                <Image style={{width:'100%'}}  src='http://p1.music.126.net/yHRI1v_VjLXbxlbBPVOVIQ==/109951164072281201.jpg' />
+              </SwiperItem>
+              <SwiperItem>
+                <Image style={{width:'100%'}}  src='http://p1.music.126.net/L8V3uVejBPq0-sayNgDMYA==/109951164072238305.jpg' />
+              </SwiperItem>
+              <SwiperItem>
+                <Image style={{width:'100%'}}  src='http://p1.music.126.net/yYt2NIFerGKv1NIgsd8isA==/109951164072244366.jpg' />
+              </SwiperItem>
+            </Swiper>
+          </View>
 
 
           <View className='summary'>

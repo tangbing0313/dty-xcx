@@ -1,12 +1,13 @@
 .indexWapper{
-  padding: 20px;
+  background: #fafafa;
 }
 
 .indexSwiper{
-
+  padding: 20px;
+  background: #fff;
 }
 
 .summary{
-  background: #efefef;
+  background: #fff;
   margin-top: 20px;
 }
