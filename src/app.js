@@ -37,11 +37,6 @@ class App extends Component {
           iconPath: "./assets/common/tab1.png",
           selectedIconPath: "./assets/common/tab1_select.png"
         },{
-          pagePath:'pages/study/index',
-          text:'学习',
-          iconPath: "./assets/common/tab2.png",
-          selectedIconPath: "./assets/common/tab2_select.png"
-        },{
           pagePath:'pages/club/index',
           text:'发现',
           iconPath: "./assets/common/tab3.png",

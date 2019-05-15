@@ -8,15 +8,19 @@ export default class Index extends Component {
     navigationBarTitleText: '多途英语'
   }
 
-  componentWillMount () { }
-
-  componentDidMount () { }
-
-  componentWillUnmount () { }
-
-  componentDidShow () { }
-
-  componentDidHide () { }
+  componentWillMount(){
+    Taro.request({
+      url: 'http://wechat.duotuill.com/xcx/index',
+      data: {
+        foo: 'foo',
+        bar: 10
+      },
+      header: {
+        'content-type': 'application/json'
+      }
+    })
+      .then(res => console.log(res.data))
+  }
 
   render () {
     return (
