@@ -11,3 +11,27 @@
   background: #fff;
   margin-top: 20px;
 }
+
+.summary{
+  padding: 30px;
+}
+.summary-title-box{
+   display: flex;
+  flex-direction: row;
+  align-items:flex-end;
+  justify-content:space-between;
+
+}
+.summary-title{
+  font-size: 45px;
+}
+.summary-more{
+  font-size: 30px;
+  color: #666666;
+}
+
+.summary-img-ref{
+  width:200px;
+  height: 300px;
+  border-radius: 10px;
+}

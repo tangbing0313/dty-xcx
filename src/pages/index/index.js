@@ -48,8 +48,23 @@ export default class Index extends Component {
 
 
           <View className='summary'>
-            sdffds
+            <View className='summary-title-box'>
+              <View className='summary-title'>学习</View>
+              <View className='summary-more'>更多 ..</View>
+            </View>
+
+            <View className='summary-box flex'>
+              <View className='summary-item'>
+                <View className='summary-img'>
+                  <Image className='summary-img-ref' src='http://p1.music.126.net/yHRI1v_VjLXbxlbBPVOVIQ==/109951164072281201.jpg' />
+                </View>
+                <View className='summary-txt'>
+
+                </View>
+              </View>
+            </View>
           </View>
+
         </View>
       </View>
     )
