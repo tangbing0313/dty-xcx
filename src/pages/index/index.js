@@ -1,6 +1,10 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Swiper, SwiperItem ,Image} from '@tarojs/components'
 import './index.css'
+import img1 from '../../assets/book/01.jpg'
+import img2 from '../../assets/book/02.jpg'
+import img3 from '../../assets/book/03.jpg'
+import img4 from '../../assets/book/04.jpg'
 
 export default class Index extends Component {
 
@@ -49,17 +53,53 @@ export default class Index extends Component {
 
           <View className='summary'>
             <View className='summary-title-box'>
-              <View className='summary-title'>学习</View>
+              <View className='summary-title'>从入门到放弃</View>
               <View className='summary-more'>更多 ..</View>
             </View>
 
-            <View className='summary-box flex'>
-              <View className='summary-item'>
-                <View className='summary-img'>
-                  <Image className='summary-img-ref' src='http://p1.music.126.net/yHRI1v_VjLXbxlbBPVOVIQ==/109951164072281201.jpg' />
+            <View className='summary-box f'>
+              <View className='summary-item f' onClick={() => {
+                wx.navigateTo({
+                  url: '/pages/study/book'
+                })
+              }}>
+                <View className='summary-img f'>
+                  <Image className='summary-img-ref' src={img1} />
                 </View>
-                <View className='summary-txt'>
-
+                <View className='summary-txt f'>
+                  <View className='summary-item-title'>新概念第一册</View>
+                  <View className='summary-item-content'>在这本教材中，每两课课文——每课大约为1课时。</View>
+                  <View className='summary-item-h f'><View className='summary-item-c ls2 f'>零基础</View> <View className='ls2'>1999位同学</View> </View>
+                </View>
+              </View>
+              <View className='summary-item f'>
+                <View className='summary-img f'>
+                  <Image className='summary-img-ref' src={img2} />
+                </View>
+                <View className='summary-txt f'>
+                  <View className='summary-item-title'>新概念第二册</View>
+                  <View className='summary-item-content'>被看成1个教学单元。学生学每课时大概用1小时。</View>
+                  <View className='summary-item-h f'><View className='summary-item-c ls2 f'>高级</View> <View className='ls2'>1999位同学</View> </View>
+                </View>
+              </View>
+              <View className='summary-item f'>
+                <View className='summary-img f'>
+                  <Image className='summary-img-ref' src={img3} />
+                </View>
+                <View className='summary-txt f'>
+                  <View className='summary-item-title'>新概念第三册</View>
+                  <View className='summary-item-content'>学生学每课时大概用1小时。</View>
+                  <View className='summary-item-h f'><View className='summary-item-c ls2 f'>炼狱</View> <View className='ls2'>1999位同学</View> </View>
+                </View>
+              </View>
+              <View className='summary-item f'>
+                <View className='summary-img f'>
+                  <Image className='summary-img-ref' src={img4} />
+                </View>
+                <View className='summary-txt f'>
+                  <View className='summary-item-title'>新概念第四册</View>
+                  <View className='summary-item-content'>被看成1个教学单元。学生学每课时大概用1小时。</View>
+                  <View className='summary-item-h f'><View className='summary-item-c ls2 f'>深渊</View> <View className='ls2'>1999位同学</View> </View>
                 </View>
               </View>
             </View>
