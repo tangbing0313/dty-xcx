@@ -1,7 +1,24 @@
 .book-wapper{
-  background: #fafbfe;
+  background: #fafcff;
+  padding: 0 30px;
 }
 
 .chapter{
   min-height: 5000px;
+}
+
+.chapter-list{
+  background: #fff;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 4px 4px 10px #f2f3f7;
+  border:1px solid #f7f8fb;
+  flex-direction:row;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.chapter-l-r{
+  flex-direction: column;
+  justify-content:center;
 }

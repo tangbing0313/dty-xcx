@@ -23,7 +23,14 @@ export default class Book extends Component {
     return (
       <View className='book-wapper'>
         <View className='chapter'>
-          <View className='chapter-list'>章节名称</View>
+          <View className='chapter-list f'>
+            <View className='chapter-l-l f'>时代峰峻时代峰峻时代峰峻时代峰峻时代峰峻</View>
+            <View className='chapter-l-r f'>sdf</View>
+          </View>
+          <View className='chapter-list f'>
+            <View className='chapter-l-l f'>时代峰峻时代峰峻时代峰峻时</View>
+            <View className='chapter-l-r f'>sdf</View>
+          </View>
           <View className='chapter-list'>章节名称</View>
           <View className='chapter-list'>章节名称</View>
           <View className='chapter-list'>章节名称</View>
