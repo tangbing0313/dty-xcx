@@ -53,7 +53,7 @@ export default class Index extends Component {
 
           <View className='summary'>
             <View className='summary-title-box'>
-              <View className='summary-title'>从入门到放弃</View>
+              <View className='summary-title'>从入门到<Text className='s'>放弃</Text>精通</View>
               <View className='summary-more'>更多 ..</View>
             </View>
 

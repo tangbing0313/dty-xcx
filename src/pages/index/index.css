@@ -76,3 +76,7 @@
 .ls2{
   letter-spacing:1px;
 }
+.s{
+  color: #ddd;
+  text-decoration:line-through;
+}
