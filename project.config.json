@@ -2,7 +2,7 @@
   "miniprogramRoot": "./dist",
   "projectname": "DuotuYun",
   "description": "多途云",
-  "appid": "touristappid",
+  "appid": "wxcc144cd511d2382d",
   "setting": {
     "urlCheck": true,
     "es6": false,
